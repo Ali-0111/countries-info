@@ -4,15 +4,16 @@ import {
 } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import countryInformation from './api';
-import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Details from './pages/Details';
+import StateShower from './components/stateShower';
+import './styles/app.css';
 
 function App() {
   const currentLocation = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
+  StateShower();
   // default view
   useEffect(() => {
     if (currentLocation.pathname !== '/') {
@@ -23,7 +24,6 @@ function App() {
 
   return (
     <>
-      <Navigation />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

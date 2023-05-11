@@ -1,12 +1,16 @@
 import Cards from '../components/Cards';
-import Form from '../components/Form';
+import Navigation from '../components/Navigation';
+import LastSearched from '../components/LastSearched';
 
 function Home() {
   return (
-    <section className="home-data-container">
-      <Form />
-      <Cards />
-    </section>
+    <>
+      <Navigation />
+      <section className="home-data-container">
+        <LastSearched />
+        <Cards />
+      </section>
+    </>
   );
 }
 

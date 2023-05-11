@@ -22,19 +22,20 @@ function Form() {
   }
 
   return (
-    <form className="search-Form" onSubmit={submitHandler}>
+    <form className="search-Form flex-row" onSubmit={submitHandler}>
       <input
         className="input-search-country"
         type="text"
         value={country}
         placeholder="Search by country name"
+        required
         onChange={changeHandler}
       />
       <button
         className="submit-btn"
         type="submit"
       >
-        Search
+        <i className="search-icon" />
       </button>
     </form>
   );

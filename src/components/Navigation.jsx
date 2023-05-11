@@ -1,21 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import Form from './Form';
+import '../styles/components/Navigation.css';
 
 function Navigation() {
   return (
-    <header className="main-head">
-      <h2>Logo</h2>
-      <nav>
-        <ul>
-          <li>
-            <NavLink className="link" to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink className="link" to="/details">Details</NavLink>
-          </li>
-        </ul>
-      </nav>
+    <header className="main-head flex-row blur">
+      <Form />
     </header>
-
   );
 }
 
