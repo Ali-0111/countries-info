@@ -11,7 +11,7 @@ function LastSearched() {
           <img className="worldPic" src={worldMap} alt="world-map" />
         </div>
       </div>
-      <div className="recent-searched">
+      <div className="recent-searched border-blur">
         {
           countryByNameReport[0]
             ? (

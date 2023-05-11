@@ -5,7 +5,7 @@ function Card({ name, capital }) {
   return (
     <>
       <div className="countryPic-wrapper">
-        <img src={countryPic} alt="countryPic" />
+        <img className="countryPic" src={countryPic} alt="countryPic" />
       </div>
       <div className="country-capital">
         <h3>{name}</h3>

@@ -1,0 +1,30 @@
+.cards {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card-country {
+  width: 200px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* picture part  */
+
+/* .countryPic-wrapper {
+} */
+
+/* .countryPic {
+} */
+
+/* details part  */
+
+.country-capital {
+  padding: 1px 10px;
+  align-self: flex-end;
+}
