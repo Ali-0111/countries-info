@@ -1,10 +1,14 @@
 import { useSelector } from 'react-redux';
+import Card from './CardCountry';
+import Loading from './Loading';
 
 function Cards() {
   const { countriesReport: store, isSearching } = useSelector((state) => state);
 
   if (isSearching) {
-    return (<p>Downloading...</p>);
+    return (
+      <Loading />
+    );
   }
 
   return (
@@ -12,8 +16,7 @@ function Cards() {
       {
         store.map((country, i) => (
           <div key={`country${i + 1}`} className="card-country">
-            <h3>{country.name}</h3>
-            <p>{country.capital}</p>
+            <Card name={country.name} capital={country.capital} />
           </div>
         ))
       }
