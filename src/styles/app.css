@@ -1,3 +1,4 @@
+/********************** fonts ***************/
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +13,8 @@
 
 .blur {
   backdrop-filter: blur(10px);
+}
+
+.font {
+  font-family: 'Puritan', sans-serif;
 }
