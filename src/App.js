@@ -18,7 +18,7 @@ function App() {
     if (currentLocation.pathname !== '/') {
       navigate('/');
     }
-    dispatch(countryInformation('www.fac'));
+    dispatch(countryInformation());
   }, []);
 
   return (
