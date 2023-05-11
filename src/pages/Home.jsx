@@ -1,6 +1,12 @@
+import Cards from '../components/Cards';
+import Form from '../components/Form';
+
 function Home() {
   return (
-    <h2>Home Section</h2>
+    <section className="home-data-container">
+      <Form />
+      <Cards />
+    </section>
   );
 }
 
