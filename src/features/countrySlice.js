@@ -4,7 +4,7 @@ import countryInformation, { countryByNameInformation } from '../api';
 const initialState = {
   countriesReport: [],
   countryByNameReport: [],
-  isSearching: true,
+  isSearching: false,
 };
 
 const countrySlice = createSlice({

@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import '../styles/components/Navigation.css';
+import '../styles/components/LastSearched.css';
 
 function LastSearched() {
   const { countryByNameReport } = useSelector((state) => state);

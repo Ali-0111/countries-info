@@ -4,13 +4,13 @@ import LastSearched from '../components/LastSearched';
 
 function Home() {
   return (
-    <>
+    <main>
       <Navigation />
       <section className="home-data-container">
         <LastSearched />
         <Cards />
       </section>
-    </>
+    </main>
   );
 }
 
