@@ -17,7 +17,7 @@ function Details() {
   }
 
   return (
-    <section className="details-container">
+    <section className="details-container font">
       <header className="main-head details-head">
         <button
           className="navigator"

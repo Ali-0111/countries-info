@@ -8,7 +8,7 @@ function Home() {
     <>
       <Navigation />
       <main>
-        <section className="home-section">
+        <section className="font home-section">
           <LastSearched />
           <Cards />
         </section>
