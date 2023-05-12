@@ -38,7 +38,7 @@ main {
 }
 
 .recent-searched h2 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .recent-searched p {
@@ -55,7 +55,7 @@ main {
   align-items: center;
 }
 
-/********************* Home section  ************/
+/********************* Form section  ************/
 
 .input-search-country {
   font-size: 17px;
