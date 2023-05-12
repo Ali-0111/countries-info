@@ -8,6 +8,7 @@ main {
     -2px -2px 20px rgba(58, 91, 158, 0.8);
 }
 
+/****************** Recent search section *************/
 .last-visited-con {
   box-shadow: 2px 5px 10px rgba(58, 91, 158, 0.8);
 }
@@ -44,6 +45,7 @@ main {
   font-size: 20px;
 }
 
+/********************* Coutry List Section  *******/
 .home-section {
   box-shadow: 2px 5px 10px rgba(58, 91, 158, 0.8);
   padding: 10px;
@@ -51,4 +53,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/********************* Home section  ************/
+
+.input-search-country {
+  font-size: 17px;
+  width: 350px;
 }
