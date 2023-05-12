@@ -3,7 +3,7 @@ import '../styles/components/Navigation.css';
 
 function Navigation() {
   return (
-    <header className="main-head flex-row">
+    <header className="main-head flex-row font">
       <Form />
     </header>
   );
