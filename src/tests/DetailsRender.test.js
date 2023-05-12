@@ -1,8 +1,8 @@
 import { Provider } from 'react-redux';
 import camera from 'react-test-renderer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Details from '../../pages/Details';
-import store from '../../store/store';
+import Details from '../pages/Details';
+import store from '../store/store';
 
 describe('Validatin for Home page rendering', () => {
   test('Home page should be rendered succesfully', () => {
