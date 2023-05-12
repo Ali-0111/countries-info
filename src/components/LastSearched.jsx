@@ -1,7 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import worldMap from '../images/world.png';
 
 function LastSearched() {
+  const navigate = useNavigate();
+
+  function detailsNavigatorHandler() {
+    navigate('/details');
+  }
+
   const { countryByNameReport } = useSelector((state) => state);
 
   return (
@@ -22,6 +29,13 @@ function LastSearched() {
                 <p>
                   {countryByNameReport[0].capital}
                 </p>
+                <button
+                  className="navigator"
+                  type="button"
+                  onClick={detailsNavigatorHandler}
+                >
+                  <i className="details-navigator-icon" />
+                </button>
               </>
             )
             : (<h3 className="canSearch"> You can Search your favorite country.</h3>)

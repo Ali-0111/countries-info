@@ -3,7 +3,7 @@ import '../styles/components/Navigation.css';
 
 function Navigation() {
   return (
-    <header className="main-head flex-row blur">
+    <header className="main-head flex-row">
       <Form />
     </header>
   );

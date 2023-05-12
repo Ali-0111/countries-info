@@ -1,5 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../components/Loading';
+import '../styles/pages/Details.css';
 
 function Details() {
   const navigate = useNavigate();
@@ -11,41 +13,51 @@ function Details() {
   const { countryByNameReport, isSearching } = useSelector((state) => state);
 
   if (isSearching) {
-    return (<p>Searching...</p>);
+    return (<Loading />);
   }
 
   return (
     <section className="details-container">
-      <div className="searched-country-container">
+      <header className="main-head details-head">
         <button
-          className="home-navigator"
+          className="navigator"
           type="button"
           onClick={homeNavigatorHandler}
         >
-          Home
+          <i className="home-navigator-icon" />
         </button>
+        <h2>{countryByNameReport[0].name}</h2>
+      </header>
+
+      <div className="searched-country-container">
         {
           !countryByNameReport[0]
             ? <p>Not Matched!</p>
             : (
-              <>
-                <h3>
-                  Country-Name:
-                  {countryByNameReport[0].name}
-                </h3>
-                <p>
-                  Capital-Name:
-                  {countryByNameReport[0].capital}
-                </p>
-                <p>
-                  Capital-Region:
-                  {countryByNameReport[0].region}
-                </p>
-                <p>
-                  Currency:
-                  {countryByNameReport[0].currency.name}
-                </p>
-              </>
+              <ul className="list-country-details">
+                <div className="list-head list-item">
+                  <h3>Parameters:</h3>
+                  <h3>(Values)</h3>
+                </div>
+
+                {
+                  Object.entries(countryByNameReport[0]).map((item, i) => {
+                    const [key, value] = item;
+                    return (
+                      <>
+                        <li className="list-item" key={`key${i + 1}`}>
+                          <h3>{key}</h3>
+                          {
+                            (key === 'currency')
+                              ? <p>{value.name}</p>
+                              : <p>{value}</p>
+                          }
+                        </li>
+                      </>
+                    );
+                  })
+                }
+              </ul>
             )
         }
       </div>
