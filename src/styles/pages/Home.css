@@ -11,6 +11,7 @@ main {
 /****************** Recent search section *************/
 .last-visited-con {
   box-shadow: 2px 5px 10px rgba(58, 91, 158, 0.8);
+  width: 100%;
 }
 
 .bg-map-wrapper {
