@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Validatin for Home page rendering Home page should be rendered succesfully 1`] = `
+Array [
+  <header
+    className="main-head flex-row"
+  >
+    <form
+      className="search-Form flex-row"
+      onSubmit={[Function]}
+    >
+      <input
+        className="input-search-country"
+        onChange={[Function]}
+        placeholder="Search by country name"
+        required={true}
+        type="text"
+        value=""
+      />
+      <button
+        className="submit-btn"
+        type="submit"
+      >
+        <i
+          className="search-icon"
+        />
+      </button>
+    </form>
+  </header>,
+  <main>
+    <section
+      className="home-section"
+    >
+      <div
+        className="last-visited-con flex-row"
+      >
+        <div
+          className="bg-map-wrapper"
+        >
+          <div
+            className="worldPic-shadow"
+          >
+            <img
+              alt="world-map"
+              className="worldPic"
+              src="world.png"
+            />
+          </div>
+        </div>
+        <div
+          className="recent-searched border-blur"
+        >
+          <h3
+            className="canSearch"
+          >
+             You can Search your favorite country.
+          </h3>
+        </div>
+      </div>
+      <div
+        className="cards"
+      />
+    </section>
+  </main>,
+]
+`;
