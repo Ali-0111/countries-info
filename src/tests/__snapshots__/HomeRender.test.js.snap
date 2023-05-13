@@ -3,33 +3,37 @@
 exports[`Validatin for Home page rendering Home page should be rendered succesfully 1`] = `
 Array [
   <header
-    className="main-head flex-row"
+    className="main-head flex-row font"
   >
-    <form
-      className="search-Form flex-row"
-      onSubmit={[Function]}
+    <div
+      className="form-wrapper"
     >
-      <input
-        className="input-search-country"
-        onChange={[Function]}
-        placeholder="Search by country name"
-        required={true}
-        type="text"
-        value=""
-      />
-      <button
-        className="submit-btn"
-        type="submit"
+      <form
+        className="search-Form flex-row"
+        onSubmit={[Function]}
       >
-        <i
-          className="search-icon"
+        <input
+          className="input-search-country"
+          onChange={[Function]}
+          placeholder="Search by country name"
+          required={true}
+          type="text"
+          value=""
         />
-      </button>
-    </form>
+        <button
+          className="submit-btn"
+          type="submit"
+        >
+          <i
+            className="search-icon"
+          />
+        </button>
+      </form>
+    </div>
   </header>,
   <main>
     <section
-      className="home-section"
+      className="font home-section"
     >
       <div
         className="last-visited-con flex-row"
