@@ -5,8 +5,8 @@ import worldMap from '../images/world.png';
 function LastSearched() {
   const navigate = useNavigate();
 
-  function detailsNavigatorHandler() {
-    navigate('/details');
+  function detailsNavigatorHandler(country) {
+    navigate(`/details/${country}`);
   }
 
   const { countryByNameReport } = useSelector((state) => state);
@@ -32,7 +32,7 @@ function LastSearched() {
                 <button
                   className="navigator"
                   type="button"
-                  onClick={detailsNavigatorHandler}
+                  onClick={() => { detailsNavigatorHandler(countryByNameReport[0].name); }}
                 >
                   <i className="details-navigator-icon" />
                 </button>

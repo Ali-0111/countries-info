@@ -13,18 +13,19 @@ function Cards() {
   }
 
   return (
-    <div className="cards">
+    <ul className="cards">
       {
         store.map((country, i) => (
-          <div
+          <li
             key={`country${i + 1}`}
+            id={`country${i + 1}`}
             className="card-country border-blur"
           >
             <Card name={country.name} capital={country.capital} />
-          </div>
+          </li>
         ))
       }
-    </div>
+    </ul>
   );
 }
 

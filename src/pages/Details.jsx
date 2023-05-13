@@ -35,10 +35,10 @@ function Details() {
             ? <p>Not Matched!</p>
             : (
               <ul className="list-country-details">
-                <div className="list-head list-item">
+                <li key="head" className="list-head list-item">
                   <h3>Parameters:</h3>
                   <h3>(Values)</h3>
-                </div>
+                </li>
 
                 {
                   Object.entries(countryByNameReport[0]).map((item, i) => {

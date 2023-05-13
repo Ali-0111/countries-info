@@ -18,7 +18,9 @@ const countryInformation = createAsyncThunk(
 );
 
 export const countryByNameInformation = createAsyncThunk(
-  'countriesList/countryByNameDetails', async (url) => {
+  'countriesList/countryByNameDetails', async (countryName) => {
+    const url = `
+    ${process.env.REACT_APP_API_BASE_URL}${countryName}`;
     const response = await axios.get(url, configHeader);
     return response.data;
   },

@@ -6,9 +6,11 @@ import { useDispatch } from 'react-redux';
 import countryInformation from './api';
 import Home from './pages/Home';
 import Details from './pages/Details';
+import StateShower from './components/StateShower';
 import './styles/app.css';
 
 function App() {
+  StateShower();
   const currentLocation = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -24,7 +26,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/details" element={<Details />} />
+        <Route path="/details/:name" element={<Details />} />
       </Routes>
     </>
   );

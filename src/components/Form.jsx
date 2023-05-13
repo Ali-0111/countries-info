@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import FilterBySearch from './filterbySearch';
 import { countryByNameInformation } from '../api';
 
@@ -10,8 +10,10 @@ function Form() {
   const navigate = useNavigate();
   const [country, setcountry] = React.useState('');
   const [filteredArray, setfilteredArray] = React.useState([]);
-  const byCountryUrl = `
-    ${process.env.REACT_APP_API_BASE_URL}${country}`;
+
+  const linkClickHanlder = (country) => {
+    dispatch(countryByNameInformation(country));
+  };
 
   function changeHandler(event) {
     setcountry(event.target.value);
@@ -20,8 +22,8 @@ function Form() {
 
   function submitHandler(e) {
     e.preventDefault();
-    dispatch(countryByNameInformation(byCountryUrl));
-    navigate('/details');
+    dispatch(countryByNameInformation(country));
+    navigate(`/details/${country}`);
   }
 
   return (
@@ -52,7 +54,13 @@ function Form() {
               {
                 filteredArray.map((item, i) => (
                   <li key={`filtered${i + 1}`}>
-                    <p>{item.name}</p>
+                    <Link
+                      className="searchLink"
+                      to={`/details/${item.name}`}
+                      onClick={() => linkClickHanlder(item.name)}
+                    >
+                      {item.name}
+                    </Link>
                   </li>
                 ))
               }
