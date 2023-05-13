@@ -62,8 +62,8 @@ Allows users to
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[live](https://space-travellers-sameed-ali.netlify.app/](https://counties-statistics.onrender.com/)
-[Presentation_Link](https://www.loom.com/share/e847c46aa4814534b23b3a8e4dd60d6d)
+- [live](https://counties-statistics.onrender.com/)
+- [Presentation_Link](https://www.loom.com/share/e847c46aa4814534b23b3a8e4dd60d6d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
