@@ -123,7 +123,7 @@ This project deployed in:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **A Dragons page will be created and deployed later.**
+- **Resposnisve Desktop Version.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,13 +144,13 @@ If you like this project, please give this project a star and you may also appre
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank:
-[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the design
-[api-ninjas](https://api-ninjas.com/api/country) for the api
-[freepik](https://www.freepik.com/) for the icons
+[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the design,
+[api-ninjas](https://api-ninjas.com/api/country) for the api and
+[freepik](https://www.freepik.com/) for the icons.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Ali-0111/space-travellers/blob/dev/LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
