@@ -94,6 +94,15 @@
   margin: 2px 0;
 }
 
+.searchLink {
+  text-decoration: none;
+  color: white;
+}
+
+.searchLink:hover {
+  border-bottom: 0.5px solid white;
+}
+
 /********************* Details section ***/
 .details-navigator-icon {
   background: url('../../icons/chevronRight.svg') center no-repeat;
