@@ -1,0 +1,55 @@
+.details-container {
+  box-shadow: 2px 5px 10px rgba(58, 91, 158, 0.8);
+  margin: 10px 20px;
+}
+
+.details-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+}
+
+.navigator {
+  color: white;
+  border: none;
+  background: none;
+}
+
+.home-navigator:hover {
+  cursor: pointer;
+}
+
+.home-navigator-icon {
+  background: url('../../icons/chevronLeft.svg') center no-repeat;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-size: 15px;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.home-navigator-icon:hover {
+  transform: scale(1.2);
+}
+
+.searched-country-container {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* section ul list  */
+
+.list-item {
+  display: flex;
+  padding: 3px;
+  justify-content: space-between;
+  border: 0.5px solid black;
+  margin: 2px 0;
+}
+
+.list-head {
+  background-color: rgb(214, 214, 214);
+}

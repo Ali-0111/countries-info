@@ -1,0 +1,24 @@
+/********************** fonts ***************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur {
+  backdrop-filter: blur(10px);
+}
+
+.font {
+  font-family: 'Puritan', sans-serif;
+}

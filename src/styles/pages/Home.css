@@ -1,0 +1,120 @@
+.border-blur {
+  box-shadow:
+    2px 5px 10px rgba(58, 91, 158, 0.8),
+    -2px -2px 20px rgba(58, 91, 158, 0.8);
+}
+
+/****************** Recent search section *************/
+.last-visited-con {
+  box-shadow: 2px 5px 10px rgba(58, 91, 158, 0.8);
+  width: 100%;
+}
+
+.bg-map-wrapper {
+  flex: 1 1 60%;
+}
+
+.worldPic-shadow {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.worldPic {
+  width: 85%;
+}
+
+.recent-searched {
+  margin: 10px;
+  padding: 10px 0;
+  font-family: 'Puritan', sans-serif;
+  text-align: center;
+  flex: 1 1 40%;
+}
+
+.recent-searched h2 {
+  font-size: 30px;
+}
+
+.recent-searched p {
+  font-size: 20px;
+}
+
+/********************* Coutry List Section  *******/
+.home-section {
+  margin: 0 20px;
+  box-shadow: 2px 5px 10px rgba(58, 91, 158, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/********************* Form section  ************/
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.input-search-country {
+  font-size: 17px;
+  width: 350px;
+}
+
+.search-icon {
+  transition: all ease-in-out 0.3s;
+}
+
+.search-icon:hover,
+.search-Form:valid .search-icon {
+  transform: scale(1.3);
+}
+
+.filteredList {
+  width: 100%;
+}
+
+.filteredList ul {
+  color: white;
+  background-color: rgba(58, 91, 158, 0.6);
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.filteredList li {
+  margin: 2px 0;
+}
+
+.searchLink {
+  text-decoration: none;
+  color: white;
+}
+
+.searchLink:hover {
+  border-bottom: 0.5px solid white;
+}
+
+/********************* Details section ***/
+.details-navigator-icon {
+  background: url('../../icons/chevronRight.svg') center no-repeat;
+  width: 60px;
+  height: 30px;
+  display: block;
+  background-size: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  transform: scale(1.3) rotate(180deg);
+}
+
+.details-navigator-icon:hover {
+  transform: scale(1.3) rotate(540deg);
+}

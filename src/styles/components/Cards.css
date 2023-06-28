@@ -1,0 +1,40 @@
+.cards {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  opacity: 0.4;
+}
+
+.card-country {
+  width: 200px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* picture part  */
+
+/* .countryPic-wrapper {
+} */
+
+/* .countryPic {
+} */
+
+/* details part  */
+
+.country-capital {
+  padding: 1px 10px;
+  align-self: flex-end;
+}

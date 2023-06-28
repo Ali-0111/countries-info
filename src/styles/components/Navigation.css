@@ -1,0 +1,37 @@
+.main-head {
+  margin: 10px 20px;
+  padding: 10px 0;
+  margin-bottom: 0;
+  min-height: 10vh;
+  background-color: rgba(87, 136, 228, 1);
+}
+
+.submit-btn,
+.input-search-country {
+  border: none;
+  height: 30px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.input-search-country {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+  border-right: none;
+}
+
+.submit-btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background-color: rgba(58, 91, 158, 0.8);
+  border-left: none;
+}
+
+.search-icon {
+  display: block;
+  background-image: url('../../icons/searchIcon.svg');
+  background-position: center;
+  width: 18px;
+  height: 18px;
+}
